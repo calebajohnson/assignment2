@@ -5,7 +5,7 @@ var mongoose = require('mongoose'),
     config = require('./config');
 
 /* Connects to database using mongoose */
-mongoose.connect('mongodb+srv://guest:sWtTRom8gVfvhi1f@assignment2-8ytlm.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect(config.db.uri)
 
 // Demonstrates find query; finds Library West listing and displays it to the console
 var findLibraryWest = function() {

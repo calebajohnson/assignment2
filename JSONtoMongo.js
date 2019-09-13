@@ -9,7 +9,7 @@ var fs = require('fs'),
     var listingData; // Will store parsed JSON data
 
 /* Connects to database using mongoose */
-mongoose.connect('mongodb+srv://guest:sWtTRom8gVfvhi1f@assignment2-8ytlm.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect(config.db.uri)
 
 /*
   Reads from JSON file and instantiates a mongoose model for each listing object in the JSON file, 
